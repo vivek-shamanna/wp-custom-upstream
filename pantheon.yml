@@ -1,0 +1,10 @@
+# Put overrides to your pantheon.upstream.yml file here.
+# For more information, see: https://pantheon.io/docs/pantheon-yml/
+api_version: 1
+workflows: 
+  deploy_product: 
+    after: 
+      - 
+        description: "Post to after deploy_product"
+        script: scripts/deploy_product.php
+        type: webphp
